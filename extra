@@ -1,0 +1,73 @@
+Basic JavaScript
+NPM
+Basic NodeJS(in built)(Os,file,http)
+Third Party Api (Weather Api)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Node-Es6(.babel)
+Redis  > 6379
+Oauth(with github)
+Oauth(with google)
+Github
+Login/Logout(JWT)
+MongoDb Basic >27017
+Api with NodeJS(Rest)
+DashBoard(Crud)
+Testing
+OO_NodeJs
+GraphQl API
+NodeJs with postgres
+Chatapp
+----Production----
+Nginx
+Docker
+Heroku
+Pm2
+Email With Node(sendgrid)
+
+
+-------NOT----
+UI Design (html css bootstrap react jquery)
+
+https://github.com/
+https://nodejs.org/en/
+https://code.visualstudio.com/download
+
+single-thread async non blocking I/O
+V8 engine
+c++ +JavaScript
+
+Code =>  bit code 
+
+///////////////////////
+open source
+
+package.json
+> first file in application
+> starting point
+> meta data(name.description,version)
+> script (start,test,dev)
+> packages
+
+>>>>>>>>><<<<<<<<<<<<
+How to generate package.json
+>>>>>>>>>><<<<<<<<<<<<
+* nodeJs must be installed in system
+>  navigate to the folder using cmd
+> npm init
+> answer all question
+> type yes
+
+>>>>>>>>><<<<<<<<<<<<
+How to install package
+>>>>>>>>>><<<<<<<<<<<<
+* nodeJs must be installed in system
+>  navigate to the folder using cmd
+> npm i packagename
+
+>>>>>>>>><<<<<<<<<<<<
+How to dev install package
+>>>>>>>>>><<<<<<<<<<<<
+
+* nodeJs must be installed in system
+>  navigate to the folder using cmd
+> npm i packagename --save-dev
