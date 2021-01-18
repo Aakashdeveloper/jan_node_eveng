@@ -44,7 +44,7 @@ open source
 package.json
 > first file in application
 > starting point
-> meta data(name.description,version)
+> meta data(name,description,version,author)
 > script (start,test,dev)
 > packages
 
@@ -71,3 +71,27 @@ How to dev install package
 * nodeJs must be installed in system
 >  navigate to the folder using cmd
 > npm i packagename --save-dev
+
+
+>>>>>>>>><<<<<<<<<<<<
+How to global install package
+>>>>>>>>>><<<<<<<<<<<<
+> its install in system
+> we need admin access to install
+> Only very few package will go global
+
+//Window
+
+> open cmd as admin
+> npm i -g packagename
+
+//Mac & linux
+> open terminal
+> sudo npm i -g packagename
+
+//CD
+nodemon
+
+npm i -g nodemon
+
+ npm i ejs express mongodb
