@@ -819,14 +819,19 @@ var hotels = [
       ]
     }
   ]
-hotelRouter.route('/')
-  .get((req,res) => {
-      res.send(hotels)
-  })
 
-hotelRouter.route('/details')
-  .get((req,res) => {
-      res.send('hotel details')
-  })
+function router(menu){
+  hotelRouter.route('/')
+    .get((req,res) => {
+        //res.send(hotels)
+        res.render('hotels',{title:'Hotel Page',data:hotels,menu:menu})
+    })
 
-module.exports = hotelRouter
+  hotelRouter.route('/details')
+    .get((req,res) => {
+        res.send('hotel details')
+    })
+  
+  return hotelRouter
+}
+module.exports = router

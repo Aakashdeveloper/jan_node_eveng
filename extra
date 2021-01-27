@@ -96,3 +96,9 @@ nodemon
 npm i -g nodemon
 
  npm i ejs express mongodb
+
+ function add(a,b){
+     return a+b
+ }
+
+ add(1,2)

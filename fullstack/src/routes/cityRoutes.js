@@ -39,15 +39,21 @@ var city = [
     }
   ]
 
-cityRouter.route('/')
+function router(menu){
+  cityRouter.route('/')
     .get((req,res) =>{
-        res.send(city)
-    })
+      //res.send(city)
+      res.render('city',{title:'City Page',data:city,menu:menu})
+  })
 
-cityRouter.route('/details')
+  cityRouter.route('/details/:id')
     .get((req,res) =>{
-        res.send('city Details')
-    })
+      var id = req.params.id;
+      var name = req.query.city?req.query.city:'Delhi';
+      res.send(`${name} Details for ${id}`)
+  })
 
+  return cityRouter;
+}
 
-module.exports = cityRouter;
+module.exports = router;
