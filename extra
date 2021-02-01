@@ -1,33 +1,29 @@
 Basic JavaScript
 NPM
 Basic NodeJS(in built)(Os,file,http)
-////////////
 Third Party Api (Weather Api)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+//////////////
 Node-Es6(.babel)
 Redis  > 6379
 Oauth(with github)
 Oauth(with google)
-Github
 Login/Logout(JWT)
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
 Testing
-OO_NodeJs
 GraphQl API
+OO_NodeJs
 NodeJs with postgres
+Github
 Chatapp
+Email With Node(sendgrid)
 ----Production----
 Nginx
 Docker
 Heroku
 Pm2
-Email With Node(sendgrid)
-
-
--------NOT----
-UI Design (html css bootstrap react jquery)
 
 https://github.com/
 https://nodejs.org/en/
@@ -102,3 +98,76 @@ npm i -g nodemon
  }
 
  add(1,2)
+
+ npm i @babel/core @babel/preset-env @babel/register 
+
+ ////////
+ MongoDb
+ /////
+ >>>>>>>local<<<<<<<
+
+ #Window
+ > download mongodb server (https://www.mongodb.com/try/download/community)
+ > In C drive
+    > create folder by the name of data
+    > inside data create folder by the name of db 
+ > c:\data\db
+
+ > open 1st cmd 
+    > go inside c:\programfile/mongodb/server/4.3/bin
+    > mongod (this will start mongodb server on port 27017)
+
+ > mongo cmd(console)
+    > go inside c:\programfile\mongodb\server\4.3\bin
+    > mongo (to test query)
+
+#Mac
+   > download mongodb server (https://www.mongodb.com/try/download/community)
+   > on root ~/data/db folder
+   > open terminal 
+        > type mongod --dbpath data/db
+   > open 2nd terminal 
+        > type mongo
+    
+ cloud
+  > https://www.mongodb.com/cloud/atlas/register
+  > 0.0.0.0/0
+
+
+  MongoDb
+
+SQl
+
+RollNo | Hindi  | English | Computer
+   1   |  80    |         |
+   2   |        |  80     |
+   3   |   80   |         |   80
+
+
+MongoDb
+[
+    {
+        rollNo:1,
+        hindi:80
+    },
+    {
+        rollNo:2,
+        english:80
+    },
+    {
+        rollNo:3,
+        hindi:80,
+        computer:80
+    }
+]
+
+  Terminology
+
+  SQl           NoSql
+  Database      Database
+  Tables        Collections
+  row           document 
+  Select        Find
+  insert        insert
+  update        update
+  delete        remove
