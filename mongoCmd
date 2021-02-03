@@ -1,0 +1,51 @@
+///To See all DataBases////
+show dbs
+
+///TO USe DB////
+use databasename
+
+///to See all collections///
+show collections
+
+//to see data in the collections////
+db.collectionname.find()
+
+db.users.find()
+db.users.find().pretty()
+
+_id > primary Key
+    > Every record will have _id
+    > value of _id should be unique
+    > by default mongodb add value to _id
+    > we can also add value but should be unique
+    12 bytes
+    > 4byte time
+    > 5byte random
+    > 3byte increment
+
+
+>>>To Create database 
+# use databasename
+
+>>>to create collections
+db.first.insert({name:'John'})
+db.first.insert({_id:1,name:'John',city:'London'})
+
+db.first.insert([
+    {
+        name:'Anthony',
+        city:'Helsinki'
+    },
+    {
+        name:'Arvind',
+        city:'Mumbai'
+    }
+])
+
+db.hotels.count()
+
+/////
+data on basis of _id
+//////
+
+db.hotels.find({_id:"1"})
