@@ -3,16 +3,16 @@ NPM
 Basic NodeJS(in built)(Os,file,http)
 Third Party Api (Weather Api)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
-//////////////
 Node-Es6(.babel)
+//////////////
 Redis  > 6379
-Oauth(with github)
-Oauth(with google)
-Login/Logout(JWT)
 MongoDb Basic >27017
 Api with NodeJS(Rest)
 DashBoard(Crud)
 Testing
+Oauth(with github)
+Oauth(with google)
+Login/Logout(JWT)
 GraphQl API
 OO_NodeJs
 NodeJs with postgres
@@ -171,3 +171,16 @@ MongoDb
   insert        insert
   update        update
   delete        remove
+
+
+Redis
+> Caching server
+https://github.com/dmajkic/redis/downloads
+redis-server (6379)
+redis-cli
+
+KEYS *
+set key value
+get key 
+
+npm i axios express redis
