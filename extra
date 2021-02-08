@@ -4,12 +4,13 @@ Basic NodeJS(in built)(Os,file,http)
 Third Party Api (Weather Api)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Node-Es6(.babel)
-//////////////
 Redis  > 6379
 MongoDb Basic >27017
+//////////////
 Api with NodeJS(Rest)
 DashBoard(Crud)
 Testing
+
 Oauth(with github)
 Oauth(with google)
 Login/Logout(JWT)
@@ -184,3 +185,7 @@ set key value
 get key 
 
 npm i axios express redis
+
+npm i body-parser cors ejs express mongodb
+
+npm i chai chai-http mocha

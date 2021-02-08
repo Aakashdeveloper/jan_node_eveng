@@ -14,7 +14,7 @@ const client = redis.createClient({
 app.get('/data/:id',(req,res) => {
     const id = req.params.id;
 
-    return client.get(id,(err,result) => {
+    return client.get(`app1${id}`,(err,result) => {
         if(result){
             const output = JSON.parse(result);
             return res.send(output)
@@ -28,7 +28,7 @@ app.get('/data/:id',(req,res) => {
                     if(err){
                       res.status(500).send('Error While Fetching')
                     }else{
-                    client.setex(id, 3600, JSON.stringify({source:'Redis',data}));
+                    client.setex(`app1${id}`, 3600, JSON.stringify({source:'Redis',data}));
                     return res.send({source:'mongodb',data})
                     }
                   })

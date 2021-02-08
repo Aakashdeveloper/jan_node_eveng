@@ -1,0 +1,46 @@
+db.users.insert([
+    {
+        "_id" : 1,
+        "name" : "Karan",
+        "city" : "Paris",
+        "phone" : 7878,
+        "isActive" : true,
+        "role" : "User",
+        "email" : "karan@gmail.com"
+    },
+    {
+        "_id" : 2,
+        "name" : "Anthony",
+        "city" : "Amsterdam",
+        "phone" : 346346,
+        "isActive" : true,
+        "role" : "User",
+        "email" : "anthony@gmail.com"
+    },
+    {
+        "_id" : 3,
+        "name" : "Aakash",
+        "city" : "Delhi",
+        "phone" : "12345",
+        "isActive" : true,
+        "role" : "Admin",
+        "email" : "aakash@gmail.com"
+    },
+    {
+        "_id" : 4,
+        "name" : "Rahul",
+        "city" : "Mumbai",
+        "phone" : "8789789787",
+        "isActive" : true,
+        "role" : "User",
+        "email" : "rahul@gmail.com"
+    },
+    {
+        "_id" : 5,
+        "name" : "Ruchika",
+        "email" : "ruchika@gmail.com",
+        "phone" : 87878868,
+        "role" : "User",
+        "isActive" : true
+    }
+])
