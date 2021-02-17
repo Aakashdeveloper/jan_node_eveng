@@ -6,15 +6,16 @@ NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Node-Es6(.babel)
 Redis  > 6379
 MongoDb Basic >27017
-//////////////
 Api with NodeJS(Rest)
 DashBoard(Crud)
+//////////////
 Testing
 
 Oauth(with github)
 Oauth(with google)
 Login/Logout(JWT)
 GraphQl API
+
 OO_NodeJs
 NodeJs with postgres
 Github

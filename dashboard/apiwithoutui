@@ -13,41 +13,18 @@ app.use(cors());
 //parse data for post call
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
-app.use(express.static(__dirname+'/public'));
-app.set('views','./src/views');
-app.set('view engine','ejs');
 
 //health Check
-app.get('/health',(req,res) => {
+app.get('/',(req,res) => {
     res.status(200).send("Health OK")
 });
-
-
-app.get('/',(req,res) => {
-    db.collection(col_name).find().toArray((err,result) => {
-        if(err) throw err;
-        res.render('index',{data:result})
-    })
-});
-
-app.get('/new',(req,res) => {
-    res.render('admin')
-})
 
 //postUser
 app.post('/addUser',(req,res) => {
     console.log(req.body);
-    var data = {
-        "name": req.body.name,
-        "city": req.body.city,
-        "phone": req.body.phone,
-        "isActive": req.body.isActive?req.body.isActive:true,
-        "role": req.body.role?req.body.role:'User',
-        "email": req.body.email
-    }
-    db.collection(col_name).insert(data,(err,result) =>{
+    db.collection(col_name).insert(req.body,(err,result) =>{
         if(err) throw err;
-        res.redirect('/')
+        res.status(200).send('Data Added')
     })
 })
 
@@ -80,6 +57,9 @@ app.get('/users',(req,res) => {
 //updatUser
 app.put('/updateUser',(req,res) => {
     let id = req.body._id;
+    if(req.body.phone.length<10){
+        res.send('invalid number')
+    }
     db.collection(col_name).update(
         {_id:mongo.ObjectID(id)},
         {
@@ -110,7 +90,6 @@ app.delete('/deleteUser',(req,res) => {
 
 //deactivate(soft delete)
 app.put('/deactivateUser',(req,res) => {
-    console.log("deactivateUser>>>>",req.body._id)
     let id = req.body._id;
     db.collection(col_name).update(
         {_id:mongo.ObjectID(id)},
@@ -142,7 +121,6 @@ app.put('/activateUser',(req,res) => {
 
 //getProfile
 app.get('/user/:id',(req,res)=>{
-    console.log("req.params.id>>",req.params.id)
     var id = mongo.ObjectID(req.params.id)
     var query = {}
     query ={_id:id}
