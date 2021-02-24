@@ -12,11 +12,10 @@ Testing
 Login/Logout(JWT)
 Oauth(with github)
 NodeJs with postgres
-//////////////
 Oauth(with google)
 GraphQl API
+//////////////
 OO_NodeJs
-
 Github
 Chatapp
 Email With Node(nodemailer)
@@ -194,3 +193,16 @@ npm i bcryptjs body-parser cors express jsonwebtoken mongoose
 
 
 npm i express request superagent
+
+npm i express-graphql axios express graphql
+
+
+//////Dummy api///////
+npm i -g json-server
+
+json-server --watch db.json --port 8900
+
+/////
+npm i @babel/core @babel/preset-env @babel/register express mongodb
+
+npm i -g @aakashdeveloper/create-node-app
