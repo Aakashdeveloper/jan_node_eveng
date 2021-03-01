@@ -14,16 +14,15 @@ Oauth(with github)
 NodeJs with postgres
 Oauth(with google)
 GraphQl API
-//////////////
-OO_NodeJs
-Github
-Chatapp
-Email With Node(nodemailer)
-----Production----
-Nginx
 Docker
 Heroku
+OO_NodeJs
+Github
+Nginx
 Pm2
+//////////////
+Chatapp
+Email With Node(nodemailer)
 
 https://github.com/
 https://nodejs.org/en/
@@ -206,3 +205,33 @@ json-server --watch db.json --port 8900
 npm i @babel/core @babel/preset-env @babel/register express mongodb
 
 npm i -g @aakashdeveloper/create-node-app
+
+//first time from new folder
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/jannode.git
+git push -u origin master
+
+//next all time
+git add .
+git commit -m "first commit"
+git push
+
+git pull
+
+///
+git clone https://github.com/Aakashdeveloper/jannode.git
+
+docker build . -t imagename
+docker run -p 9800:8900 imagename
+
+npm i -g Pm2
+
+pm2 start startfilename
+pm2 status
+pm2 stop startfilename
+pm2 start api.js -i 4
+
+git global
