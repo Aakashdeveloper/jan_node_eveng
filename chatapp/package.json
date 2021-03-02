@@ -1,0 +1,23 @@
+{
+  "name": "sample-node-app",
+  "version": "1.0.33",
+  "description": "The Seed will help you build node app with es6 very quick",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "nodemon start.js",
+    "test": "mocha --timeout 10000",
+    "commit": "npx git-cz"
+  },
+  "keywords": [
+    "Node",
+    "Es6",
+    "Docker",
+    "babel",
+    "EJS"
+  ],
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}
